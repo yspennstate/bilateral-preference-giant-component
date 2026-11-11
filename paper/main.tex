@@ -43,7 +43,7 @@ Moharrami, Subramanian, Liu and Sundaresan \cite{EWT} proved that $G_n$ converge
 \[
 \rho(P)=\Pp\bigl(|\Er(P)|=\infty\bigr)
 \]
-for its survival probability and $L_1(G_n)$ for the number of vertices of a largest component of $G_n$. Local convergence gives the upper bound $L_1(G_n)\le(\rho(P)+o(1))n$ with probability tending to one \cite[Corollary~2.2]{EWT}. Among the questions at the end of their paper \cite[Section~4, question~3]{EWT} they observe in simulation that the fraction of vertices in the giant component approaches $\rho(P)$ and note that the reverse inequality needs a separate proof. The following theorem supplies it.
+for its survival probability and $L_1(G_n)$ for the number of vertices of a largest component of $G_n$. Local convergence gives the upper bound $L_1(G_n)\le(\rho(P)+o(1))n$ with probability tending to one \cite[Corollary~2.2]{EWT}. The local limit of $K_n$ with independent exponential edge costs is the Poisson weighted infinite tree of the objective method of Aldous and Steele \cite{AS}. Local convergence alone does not identify the giant; van der Hofstad \cite{vdH} gives an ``almost local'' criterion under which the giant fraction equals the survival probability of the limit, and his monograph \cite{vdHbook} treats local convergence of random graphs in general. Among the questions at the end of their paper \cite[Section~4, question~3]{EWT} they observe in simulation that the fraction of vertices in the giant component approaches $\rho(P)$ and note that the reverse inequality needs a separate proof. The following theorem supplies it.
 
 \begin{theorem}\label{thm:main}
 Let $P$ be a probability law on the positive integers with finite mean and $P(\{1\})<1$. Then
@@ -400,6 +400,8 @@ The paper is part of the Math Brain project, whose public repository is \url{htt
 \bibitem{code}
 Y.~Shmalo, Computations for ``The giant component of bilateral preference graphs with random budgets'', \url{https://github.com/yspennstate/bilateral-preference-giant-component}, 2026.
 
+\bibitem{AS}
+D.~Aldous and J.~M.~Steele, The objective method: probabilistic combinatorial optimization and local weak convergence, in \emph{Probability on Discrete Structures}, Encyclopaedia Math. Sci., Springer, Berlin, 2004, 1--72.
 \bibitem{DS}
 H.~Dabirian and V.~Subramanian, Connectivity of a family of bilateral preference random graphs, \emph{J. Appl. Probab.} \textbf{63} (2026), 552--579. Also arXiv:2209.05677.
 
@@ -415,6 +417,10 @@ M.~Moharrami, V.~Subramanian, M.~Liu and R.~Sundaresan, The Erlang weighted tree
 
 \bibitem{BrainFramework} Y.~Shmalo, \emph{Brain Framework}, public software repository, 2026, \url{https://github.com/yspennstate/brain-framework-public}.
 
+\bibitem{vdH}
+R.~van der Hofstad, The giant in random graphs is almost local, arXiv:2103.11733, 2021.
+\bibitem{vdHbook}
+R.~van der Hofstad, \emph{Random Graphs and Complex Networks}, Vol.~2, Cambridge University Press, Cambridge, 2024.
 \end{thebibliography}
 
 \end{document}
